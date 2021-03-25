@@ -32,7 +32,13 @@ class AccountVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(self.accounts[indexPath.row].id)
+        let accountDetail = self.accounts[indexPath.row]
+        let transcationVC = self.storyboard?.instantiateViewController(identifier: "transactionVC") as! TransactionVC
+        transcationVC.id = accountDetail.id
+        transcationVC.availableBalance = accountDetail.availableBalance
+        transcationVC.currentBalance = accountDetail.currentBalance
+        transcationVC.productName = accountDetail.productName
+        self.navigationController?.pushViewController(transcationVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

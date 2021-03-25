@@ -26,6 +26,7 @@
 		34CDDE07260C2C470057B340 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDDE06260C2C470057B340 /* Account.swift */; };
 		34CDDE0C260C2C6D0057B340 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDDE0B260C2C6D0057B340 /* Transaction.swift */; };
 		34CDDE11260C2E020057B340 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDDE10260C2E020057B340 /* TransactionVC.swift */; };
+		34CDDE16260C34420057B340 /* transactionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDDE15260C34420057B340 /* transactionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		34CDDE06260C2C470057B340 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		34CDDE0B260C2C6D0057B340 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		34CDDE10260C2E020057B340 /* TransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
+		34CDDE15260C34420057B340 /* transactionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transactionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				3467330F260C126300DD3208 /* accountCell.swift */,
+				34CDDE15260C34420057B340 /* transactionCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34673310260C126300DD3208 /* accountCell.swift in Sources */,
+				34CDDE16260C34420057B340 /* transactionCell.swift in Sources */,
 				346732D8260C07B600DD3208 /* AccountVC.swift in Sources */,
 				346732A5260C069800DD3208 /* AppDelegate.swift in Sources */,
 				34CDDE11260C2E020057B340 /* TransactionVC.swift in Sources */,

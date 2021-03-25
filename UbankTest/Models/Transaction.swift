@@ -14,7 +14,7 @@ struct Transaction : Decodable {
     var date: String
     var description: String
     var amount: String
-    var runningBalance: String
+    var runningBalance: String?
     var processingStatus: String
 }
 
