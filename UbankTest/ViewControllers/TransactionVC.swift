@@ -40,12 +40,13 @@ class TransactionVC: UIViewController,UITableViewDelegate, UITableViewDataSource
             cell.lblCurrentBalance.text = self.currentBalance
             cell.bgView.layer.cornerRadius = 10
             return cell
+       
         }else{
             let transactionDetail = self.sortedTransaction[indexPath.row-1]
             let cell: transactionCell = tableView.dequeueReusableCell(withIdentifier: "transactionCell") as! transactionCell
             let convertedDate = Util.convertStringToDate(stringDate: transactionDetail.date)
             cell.transactionDate.text = "\(convertedDate)"
-            cell.amount.text = transactionDetail.amount
+            cell.amount.text = "$\(transactionDetail.amount)"
             cell.transactionDesc.text = transactionDetail.description
             cell.processingStatus.text = transactionDetail.processingStatus
             return cell

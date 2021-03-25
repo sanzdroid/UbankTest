@@ -242,7 +242,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="NGG-TX-rIT" secondAttribute="trailing" constant="8" id="zm5-rv-a5N"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.49183740002171966" green="0.62226364213197971" blue="0.40779698474016263" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="bgView" destination="NGG-TX-rIT" id="4Jb-sL-dpC"/>
                                             <outlet property="lblAccountName" destination="Pkc-6K-2PN" id="oie-2v-A7F"/>

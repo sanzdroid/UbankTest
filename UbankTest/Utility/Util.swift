@@ -11,8 +11,11 @@ class Util{
     class func convertStringToDate(stringDate: String) -> String{
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
+        
         let date1 = formatter.date(from: stringDate)
-        formatter.dateFormat = "dd-MMM-YYYY HH:mm"
+        formatter.dateFormat = "E, d MMM yyyy HH:mm a"
+      
+        
         let stringDate = formatter.string(from: date1!)
         return stringDate
     }

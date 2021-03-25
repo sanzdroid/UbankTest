@@ -29,8 +29,8 @@ class AccountVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
         let accountDetail = self.accounts[indexPath.row]
         cell?.lblAccountName.text = accountDetail.productName
         cell?.lblAccountNo.text = accountDetail.id
-        cell?.lblAvailableBalance.text = accountDetail.availableBalance
-        cell?.lblCurrentBalance.text = accountDetail.currentBalance
+        cell?.lblAvailableBalance.text = "$\(accountDetail.availableBalance)"
+        cell?.lblCurrentBalance.text = "$\(accountDetail.currentBalance)"
         return cell!
     }
     
