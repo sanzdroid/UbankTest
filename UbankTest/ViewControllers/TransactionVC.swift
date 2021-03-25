@@ -21,6 +21,7 @@ class TransactionVC: UIViewController,UITableViewDelegate, UITableViewDataSource
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        self.title = "Transactions"
         self.transactions = ApiService.loadTransactionJson(accountID: self.id)!
         self.sortedTransaction =  self.transactions.sorted(by: { $0.date > $1.date })
         print(self.sortedTransaction)
@@ -37,6 +38,7 @@ class TransactionVC: UIViewController,UITableViewDelegate, UITableViewDataSource
             cell.lblAccountNo.text = self.id
             cell.lblAccountName.text = self.productName
             cell.lblCurrentBalance.text = self.currentBalance
+            cell.bgView.layer.cornerRadius = 10
             return cell
         }else{
             let transactionDetail = self.sortedTransaction[indexPath.row-1]

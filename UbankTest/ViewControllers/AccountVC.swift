@@ -9,11 +9,14 @@ import UIKit
 
 class AccountVC: UIViewController,UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet var accTableView: UITableView!
     var accounts = [Account]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.title = "Accounts"
         self.accounts = ApiService.loadAccountJson()!
+        accTableView.tableFooterView = UIView()
     }
     
 //MARK:- UITableView Delegates

@@ -13,7 +13,8 @@ class accountCell: UITableViewCell {
     @IBOutlet var lblAccountNo: UILabel!
     @IBOutlet var lblAvailableBalance: UILabel!
     @IBOutlet var lblCurrentBalance: UILabel!
-
+    @IBOutlet var bgView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
