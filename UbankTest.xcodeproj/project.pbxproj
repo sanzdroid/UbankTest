@@ -9,12 +9,23 @@
 /* Begin PBXBuildFile section */
 		346732A5260C069800DD3208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732A4260C069800DD3208 /* AppDelegate.swift */; };
 		346732A7260C069800DD3208 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732A6260C069800DD3208 /* SceneDelegate.swift */; };
-		346732A9260C069800DD3208 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732A8260C069800DD3208 /* ViewController.swift */; };
 		346732AC260C069800DD3208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346732AA260C069800DD3208 /* Main.storyboard */; };
 		346732AE260C069C00DD3208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346732AD260C069C00DD3208 /* Assets.xcassets */; };
 		346732B1260C069C00DD3208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346732AF260C069C00DD3208 /* LaunchScreen.storyboard */; };
 		346732BC260C069C00DD3208 /* UbankTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732BB260C069C00DD3208 /* UbankTestTests.swift */; };
 		346732C7260C069C00DD3208 /* UbankTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732C6260C069C00DD3208 /* UbankTestUITests.swift */; };
+		346732D8260C07B600DD3208 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732D7260C07B600DD3208 /* AccountVC.swift */; };
+		346732E5260C08B600DD3208 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732E4260C08B600DD3208 /* Constant.swift */; };
+		346732ED260C08C200DD3208 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732EC260C08C200DD3208 /* Util.swift */; };
+		346732F3260C093100DD3208 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346732F2260C093100DD3208 /* APIService.swift */; };
+		346732FC260C0AED00DD3208 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 346732F8260C0AEC00DD3208 /* accounts.json */; };
+		346732FD260C0AED00DD3208 /* transactions_098765.json in Resources */ = {isa = PBXBuildFile; fileRef = 346732F9260C0AEC00DD3208 /* transactions_098765.json */; };
+		346732FE260C0AED00DD3208 /* transactions_135790.json in Resources */ = {isa = PBXBuildFile; fileRef = 346732FA260C0AED00DD3208 /* transactions_135790.json */; };
+		346732FF260C0AED00DD3208 /* transactions_12345.json in Resources */ = {isa = PBXBuildFile; fileRef = 346732FB260C0AED00DD3208 /* transactions_12345.json */; };
+		34673310260C126300DD3208 /* accountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3467330F260C126300DD3208 /* accountCell.swift */; };
+		34CDDE07260C2C470057B340 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDDE06260C2C470057B340 /* Account.swift */; };
+		34CDDE0C260C2C6D0057B340 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDDE0B260C2C6D0057B340 /* Transaction.swift */; };
+		34CDDE11260C2E020057B340 /* TransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CDDE10260C2E020057B340 /* TransactionVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +49,6 @@
 		346732A1260C069800DD3208 /* UbankTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UbankTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		346732A4260C069800DD3208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		346732A6260C069800DD3208 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		346732A8260C069800DD3208 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		346732AB260C069800DD3208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		346732AD260C069C00DD3208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		346732B0260C069C00DD3208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,18 @@
 		346732C2260C069C00DD3208 /* UbankTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UbankTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		346732C6260C069C00DD3208 /* UbankTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbankTestUITests.swift; sourceTree = "<group>"; };
 		346732C8260C069C00DD3208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346732D7260C07B600DD3208 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		346732E4260C08B600DD3208 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		346732EC260C08C200DD3208 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		346732F2260C093100DD3208 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		346732F8260C0AEC00DD3208 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
+		346732F9260C0AEC00DD3208 /* transactions_098765.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_098765.json; sourceTree = "<group>"; };
+		346732FA260C0AED00DD3208 /* transactions_135790.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_135790.json; sourceTree = "<group>"; };
+		346732FB260C0AED00DD3208 /* transactions_12345.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = transactions_12345.json; sourceTree = "<group>"; };
+		3467330F260C126300DD3208 /* accountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountCell.swift; sourceTree = "<group>"; };
+		34CDDE06260C2C470057B340 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		34CDDE0B260C2C6D0057B340 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		34CDDE10260C2E020057B340 /* TransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +121,13 @@
 		346732A3260C069800DD3208 /* UbankTest */ = {
 			isa = PBXGroup;
 			children = (
+				3467330E260C124300DD3208 /* CustomCells */,
+				346732F7260C0AD200DD3208 /* JSONFiles */,
+				346732F1260C090300DD3208 /* Models */,
+				346732E3260C084300DD3208 /* Utility */,
+				346732DC260C07BD00DD3208 /* ViewControllers */,
 				346732A4260C069800DD3208 /* AppDelegate.swift */,
 				346732A6260C069800DD3208 /* SceneDelegate.swift */,
-				346732A8260C069800DD3208 /* ViewController.swift */,
 				346732AA260C069800DD3208 /* Main.storyboard */,
 				346732AD260C069C00DD3208 /* Assets.xcassets */,
 				346732AF260C069C00DD3208 /* LaunchScreen.storyboard */,
@@ -126,6 +152,53 @@
 				346732C8260C069C00DD3208 /* Info.plist */,
 			);
 			path = UbankTestUITests;
+			sourceTree = "<group>";
+		};
+		346732DC260C07BD00DD3208 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				346732D7260C07B600DD3208 /* AccountVC.swift */,
+				34CDDE10260C2E020057B340 /* TransactionVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		346732E3260C084300DD3208 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				346732F2260C093100DD3208 /* APIService.swift */,
+				346732E4260C08B600DD3208 /* Constant.swift */,
+				346732EC260C08C200DD3208 /* Util.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		346732F1260C090300DD3208 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34CDDE06260C2C470057B340 /* Account.swift */,
+				34CDDE0B260C2C6D0057B340 /* Transaction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		346732F7260C0AD200DD3208 /* JSONFiles */ = {
+			isa = PBXGroup;
+			children = (
+				346732F8260C0AEC00DD3208 /* accounts.json */,
+				346732FB260C0AED00DD3208 /* transactions_12345.json */,
+				346732F9260C0AEC00DD3208 /* transactions_098765.json */,
+				346732FA260C0AED00DD3208 /* transactions_135790.json */,
+			);
+			path = JSONFiles;
+			sourceTree = "<group>";
+		};
+		3467330E260C124300DD3208 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				3467330F260C126300DD3208 /* accountCell.swift */,
+			);
+			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +304,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				346732FD260C0AED00DD3208 /* transactions_098765.json in Resources */,
+				346732FE260C0AED00DD3208 /* transactions_135790.json in Resources */,
+				346732FF260C0AED00DD3208 /* transactions_12345.json in Resources */,
 				346732B1260C069C00DD3208 /* LaunchScreen.storyboard in Resources */,
+				346732FC260C0AED00DD3208 /* accounts.json in Resources */,
 				346732AE260C069C00DD3208 /* Assets.xcassets in Resources */,
 				346732AC260C069800DD3208 /* Main.storyboard in Resources */,
 			);
@@ -258,9 +335,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				346732A9260C069800DD3208 /* ViewController.swift in Sources */,
+				34673310260C126300DD3208 /* accountCell.swift in Sources */,
+				346732D8260C07B600DD3208 /* AccountVC.swift in Sources */,
 				346732A5260C069800DD3208 /* AppDelegate.swift in Sources */,
+				34CDDE11260C2E020057B340 /* TransactionVC.swift in Sources */,
+				346732ED260C08C200DD3208 /* Util.swift in Sources */,
 				346732A7260C069800DD3208 /* SceneDelegate.swift in Sources */,
+				34CDDE07260C2C470057B340 /* Account.swift in Sources */,
+				346732F3260C093100DD3208 /* APIService.swift in Sources */,
+				346732E5260C08B600DD3208 /* Constant.swift in Sources */,
+				34CDDE0C260C2C6D0057B340 /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
